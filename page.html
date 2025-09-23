@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distance Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+<body>
+    <h1>Distance Calculator</h1>
+    <div id="master-div">
+         <div id="flexer">
+            <div id="start-coordinates">
+                <h2>Start</h2>
+                Longitude <input id="start-lon" class="box" value="-79.3832">
+                Latitude <input id="start-lat" class="box" value="43.6532">
+            </div>
+            <div id="end-coordinates">
+                <h2>End</h2>
+                Longitude <input id="end-lon" class="box" value="-73.5673">
+                Latitude <input id="end-lat" class="box" value="45.5017">
+            </div>
+            <br>
+        </div>
+        
+        <div id="button-area">
+            <button id="go-button" class="box">Go</button>
+        </div>
 
-<div id="flexer">
-    Start at: <input id="start-bar">
-    Destination: <input id="destination-bar">
+        <br>
+        
+        <div id="results-area">
 
-    <button>Go</button>
-</div>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
+</body>
 </html>

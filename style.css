@@ -1,0 +1,72 @@
+.box {
+    width: 60px;
+}
+
+body {
+    background-color: rgba(40, 40, 40, 1);
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+
+h1, div, h2, button {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(230, 230, 230)
+}
+
+#flexer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+#start-coordinates #end-coordinates {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#go-button {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor:pointer
+}
+
+#button-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#master-div {
+    gap: 4px;
+}
+
+.hidden {
+    display:none
+}
+
+#results-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    font-weight: bold;
+}
