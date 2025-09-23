@@ -10,6 +10,7 @@ h1 {
     align-items: center;
     justify-content: center;
     display: flex;
+    font-size: 4rem;
 }
 
 h2 {
@@ -17,6 +18,7 @@ h2 {
     justify-content: center;
     display: flex;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 h1, div, h2, button {
@@ -43,14 +45,29 @@ h1, div, h2, button {
     font-weight: bold;
     border-radius: 8px;
     box-shadow: 2px 2px 0px;
-    background-color: rgba(255, 255, 255, 0);
-    cursor:pointer
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    background-color: rgba(100, 200, 100);
+    color: rgba(40, 40, 40)
+}
+
+input {
+    background-color: rgba(230, 230, 230);
+    font-family: 'Courier New', Courier, monospace;
+    border-style: double;
+    border-radius: 8px;
+    border-color: rgba(15, 15, 15);
 }
 
 #button-area {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#tips {
+    text-align: center;
 }
 
 #master-div {

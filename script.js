@@ -43,6 +43,7 @@ $(document).ready(function() {
         .then(data => {
             let duration = data.durations[0][1]
             
+            $("#results-area").empty()
             let text = "These two locations would need " + duration + " seconds to travel."
             $("#results-area").append(text).addClass("result")
         })
