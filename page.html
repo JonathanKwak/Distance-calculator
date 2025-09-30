@@ -11,21 +11,45 @@
     <div id="master-div">
         <div id="tips">Make sure the longitudes and latitudes are negative or positive based on their location relative to the Prime Meridian.</div>
         <div id="flexer">
-            <div id="start-coordinates">
-                <h2>Start Location</h2>
-                Longitude <input id="start-lon" class="box" value="-79.3832">
-                Latitude <input id="start-lat" class="box" value="43.6532">
+            <div id="method-title" class="coordinates">
+                <br>
+                <label>Choose a travel method:</label>
+                <select id="method-menu">
+                    <option value="Car">Car</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Walk">Walk</option>
+                </select>
             </div>
-            <div id="end-coordinates">
+
+            <div id="start-coordinates" class="coordinates">
+                <h2>Start Location</h2>
+                <label>Longitude, latitude</label>
+                <input id="start" class="box" value="43.6532, -79.3832">
+
+                <br>
+                <label>Or,</label>
+                <select class="presets" id="start-presets">
+                    <!-- Will be filled in procedurally by the script.js -->
+                </select>
+            </div>
+
+            <div id="end-coordinates" class="coordinates">
                 <h2>Destination</h2>
-                Longitude <input id="end-lon" class="box" value="-73.5673">
-                Latitude <input id="end-lat" class="box" value="45.5017">
+                <label>Longitude, latitude</label>
+                <input id="end" class="box" value="45.5019, -73.5674">
+
+                <br>
+                <label>Or,</label>
+                <select class="presets" id="end-presets" attr="linked">
+                    <!-- Will be filled in procedurally by the script.js -->
+                </select>
             </div>
             <br>
         </div>
         
         <div id="button-area">
             <button id="go-button" class="box">Go</button>
+            <label class="hidden" id="loading-text">Loading...</label>
         </div>
 
         <br>

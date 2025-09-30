@@ -1,5 +1,5 @@
 .box {
-    width: 60px;
+    width: 260px;
 }
 
 body {
@@ -11,6 +11,7 @@ h1 {
     justify-content: center;
     display: flex;
     font-size: 4rem;
+    font-weight: 800;
 }
 
 h2 {
@@ -19,11 +20,13 @@ h2 {
     display: flex;
     font-weight: bold;
     font-size: 2.5rem;
+    font-style: italic;
+    height: 0rem;
 }
 
-h1, div, h2, button {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgba(230, 230, 230)
+h1, div, h2, button, label {
+    font-family: "Helvetica";
+    color: rgba(230, 230, 230);
 }
 
 #flexer {
@@ -34,6 +37,12 @@ h1, div, h2, button {
     gap: 4px;
 }
 
+.coordinates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #start-coordinates #end-coordinates {
     flex-direction: row;
     align-items: center;
@@ -41,23 +50,30 @@ h1, div, h2, button {
 }
 
 #go-button {
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 2px 2px 0px;
+    font-family: "Helvetica";
+    font-weight: 800;
+    font-size: 40px;
+
+    border-radius: 20px;
+    border-width: 0;
+
+    box-shadow: 4px 4px 0px;
+
     cursor: pointer;
-    width: 4rem;
-    height: 2rem;
+    width: 8rem;
+    height: 4rem;
     background-color: rgba(100, 200, 100);
-    color: rgba(40, 40, 40)
+    
+    color: rgb(51, 116, 51)
 }
 
-input {
-    background-color: rgba(230, 230, 230);
+input, select, option {
+    background-color: rgb(235, 235, 235);
     font-family: 'Courier New', Courier, monospace;
     border-style: double;
-    border-radius: 8px;
-    border-color: rgba(15, 15, 15);
+    border-radius: 4px;
+    border-color: rgb(151, 151, 151);
+    text-align: center;
 }
 
 #button-area {
@@ -76,6 +92,13 @@ input {
 
 .hidden {
     display:none
+}
+
+#loading-text {
+    font-style: italic;
+    font-weight: 800;
+    opacity: 50%;
+    height: 8rem;
 }
 
 #results-area {
