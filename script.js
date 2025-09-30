@@ -5,7 +5,7 @@ const url = "https://api.openrouteservice.org/v2/matrix/driving-car";
 const presets = {
     "Toronto":"43.6532, -79.3832",
     "Montreal":"45.5019, -73.5674",
-    "Vancouver":"49.2827, -123.1207"
+    "Vancouver":"49.2827, -123.1207",
 }
 
 // calls the OpenRouteService API
